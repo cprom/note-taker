@@ -12,4 +12,4 @@ app.use("/api", apiRoutes)
 app.use("/", htmlRoutes)
 
 
-app.listen(3001)
+app.listen(process.env.PORT || 3000)
