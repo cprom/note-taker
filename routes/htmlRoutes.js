@@ -10,11 +10,11 @@ router.get("/notes", (req, res) => {
   })
 })
 
-// router.get("*", (req, res) => {
-//   fs.readFile('../public/index.html', 'utf8', (err, data) => {
-//     if (err) { console.log(err) }
-//     res.json(data)
-//   })
-// })
+router.get("*", (req, res) => {
+  fs.readFile('../public/index.html', 'utf8', (err, data) => {
+    if (err) { console.log(err) }
+    res.json(data)
+  })
+})
 
 module.exports = router
